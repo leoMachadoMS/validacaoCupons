@@ -1,61 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Sobre
+Este programa é um protótipo de um sistema que verifica e gerencia códigos promocionais.
+O app é feito com React e ReactDOM, ao mesmo tempo que é usado uma API Rest feita com Laravel.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+## Instalação dos Requisitos
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Para a aplicação rodar localmente, seguem os seguintes requisitos:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+PHP (<a href="https://www.php.net/manual/en/install.php">Installation Guide </a>)
+Composer (<a href="https://getcomposer.org/doc/00-intro.md">Guia de Instalação</a>)
+Laravel (<a href="https://laravel.com/docs/8.x">Guia de Instalação</a>)
+Windows / Linux: Homestead (<a href="https://laravel.com/docs/8.x/homestead">Guia de Instalação</a>)
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Para o uso do banco de dados relacional, é necessário um servidor MySQL e Apache para a simulação local.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+XAMPP (<a href="https://www.apachefriends.org/pt_br/download.html">Guia de Instalação </a>)
+MySQL Workbrench (<a href="https://www.mysql.com/downloads/"> Guia de Instalação</a>)
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Intalação dos Módulos e preparação
 
-### Premium Partners
+Para instalar as dependências do PHP:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+<b>"composer install"</b>
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+E as dependências JS:
 
-## Code of Conduct
+<b>"npm install"</b>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+A partir do arquivo ".env.example", crie o arquivo ".env" e configure a partir das informações do seu banco de dados. Este trecho em questão:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Com o XAMPP ativo e um banco de dados ativo, use o código abaixo para fazer as migrações das tabelas:
+
+<b>"php artisan migrate"</b>
+
+
+## Compilação e Execução
+
+Então compile os JS assets com:
+
+<b>"npm run dev"</b>
+
+
+Finalmente, utilize o código abaixo para rodar o sistema:
+
+<b>"php artisan serve"</b>
+
+
+A aplicação está rodando no endereço <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/<a>
