@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Card from './Card'
 import './Card.css'
 
-    class ProjectsList extends Component {
+export default class CardList extends Component {
       constructor () {
         super()
         this.state = {
@@ -24,21 +24,17 @@ import './Card.css'
         .then(res => {
           console.log(res);
           console.log(res.data)
-      })
-      window.location.reload(false);
-    }
+        })
+        window.location.reload(false);
+      }
 
       render () {
         const { cupoms } = this.state
         return (
-          
-              
-                <div>
-                  <h3>Todas as Promoções</h3>
-                  <div className='list'>
-                    
-                    
-                      {cupoms.map(cupom => (
+          <div>
+            <h3>Todas as Promoções</h3>
+            <div className='list'>
+              {cupoms.map(cupom => (
                         <Card
                             key={cupom.id}
                             codigo={cupom.codigo}
@@ -49,14 +45,10 @@ import './Card.css'
                             cadastrar={0}
                         ><button onClick={() => this.remove(cupom.id)} >Remover</button>  </Card>
                         
-                      ))}
+              ))}
                     
-                  </div>
-                </div>
-              
-            
+            </div>
+          </div>
         )
       }
-    }
-
-    export default ProjectsList
+}

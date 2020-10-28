@@ -101,8 +101,8 @@ export default class Compra extends Component {
        
             return (
                 <div className="ComprarCard">
-                    <h1>Fazer Compra {this.state.id}</h1>
                     <div>
+                        <h1>Fazer Compra</h1>
                         <h3>Produto : {this.state.produto} </h3>
                         <h3>Valor   : R${this.state.valor}</h3>
                         <h3>Desconto: {this.state.desconto}%</h3>
@@ -112,10 +112,12 @@ export default class Compra extends Component {
                         <label htmlFor="cupom" >Cupom de Desconto</label>
                         <input id="cupom" type="text" value={this.state.promocao} onChange={e => this.setState({ promocao: e.target.value })} />
                         <button onClick={() => this.validate()} >Validar</button>
+                        <br/>
                         <label>{this.state.not}</label>
+                        <br/>
+                        
                     </div>
-                    <br/>
-                    <button onClick={() => this.register()}>Comprar</button>
+                    <button className="confirm" onClick={() => this.register()}>Comprar</button>
                 </div>
             )
         }

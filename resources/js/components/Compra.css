@@ -1,5 +1,6 @@
 .ComprarCard {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #eef;
     transition: 0.3s;
     border-radius: 5px;
     width: 300px;
@@ -10,24 +11,16 @@
     max-height: 500px;
   }
 
-  .ComprarCard h1{
-    text-align: center;
-  }
-
   .ComprarCard div {
-    text-align: left;
+    text-align: center;
+    align-content: center;
     margin-left: 15px;
     margin-bottom: 10px;
 }
 
-.ComprarCard input{
-    text-align: center;
+.confirm {
+  justify-content: space-around;
+  text-align: center;
+  width: 150px;
+  margin: 20px 80px;
 }
-
-  .ComprarCard button{
-    margin-right: 30px;
-    margin-left: 30px;
-    align-content: center;
-    text-align: center;
-    
-  }
