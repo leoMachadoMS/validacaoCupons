@@ -38,7 +38,7 @@ E as dependências JS:
 <br/><br/>
 
 A partir do arquivo ".env.example", crie o arquivo ".env" e configure a partir das informações do seu banco de dados. Este trecho em questão:
-<br/>
+<br/><br/>
 DB_CONNECTION=mysql<br/>
 DB_HOST=127.0.0.1<br/>
 DB_PORT=3306<br/>
