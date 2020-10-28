@@ -1,11 +1,10 @@
 ## Sobre
-<br/>
+
 Este programa é um protótipo de um sistema que verifica e gerencia códigos promocionais.
 O app é feito com React e ReactDOM, ao mesmo tempo que é usado uma API Rest feita com Laravel.
 <br/><br/>
 
 ## Instalação dos Requisitos
-<br/>
 
 Para a aplicação rodar localmente, seguem os seguintes requisitos:
 <br/>
@@ -27,7 +26,7 @@ MySQL Workbrench (<a href="https://www.mysql.com/downloads/"> Guia de Instalaç�
 <br/><br/>
 
 ## Intalação dos Módulos e preparação
-<br/>
+
 Para instalar as dependências do PHP:
 <br/>
 <b>"composer install"</b>
@@ -36,17 +35,17 @@ Para instalar as dependências do PHP:
 E as dependências JS:
 <br/>
 <b>"npm install"</b>
-
+<br/><br/>
 
 A partir do arquivo ".env.example", crie o arquivo ".env" e configure a partir das informações do seu banco de dados. Este trecho em questão:
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=
-
+<br/>
+DB_CONNECTION=mysql<br/>
+DB_HOST=127.0.0.1<br/>
+DB_PORT=3306<br/>
+DB_DATABASE=laravel<br/>
+DB_USERNAME=root<br/>
+DB_PASSWORD=<br/>
+<br/>
 
 Com o XAMPP ativo e um banco de dados ativo, use o código abaixo para fazer as migrações das tabelas:
 
