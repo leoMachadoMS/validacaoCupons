@@ -17,16 +17,16 @@ require('./app');
     import React, { Component } from 'react'
     import ReactDOM from 'react-dom'
     import { BrowserRouter, Route, Switch } from 'react-router-dom'
-    import ScreenPromocao from './ScreenPromocao'
-    import ScreenCompra from './ScreenCompra'
+    import ScreenCoupon from './ScreenCoupon'
+    import ScreenPurchase from './ScreenPurchase'
     
     class App extends Component {
       render () {
         return (
         <BrowserRouter>
           <Switch>
-            <Route exact path='/' component={ScreenPromocao} />
-            <Route path='/comprar' component={ScreenCompra} />
+            <Route exact path='/' component={ScreenCoupon} />
+            <Route path='/comprar' component={ScreenPurchase} />
           </Switch>
         </BrowserRouter>
         )

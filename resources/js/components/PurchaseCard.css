@@ -1,4 +1,4 @@
-.ComprarCard {
+.PurchaseCard {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: #eef;
     transition: 0.3s;
@@ -11,7 +11,7 @@
     max-height: 500px;
   }
 
-  .ComprarCard div {
+  .PurchaseCard div {
     text-align: center;
     align-content: center;
     margin-left: 15px;

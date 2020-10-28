@@ -6440,10 +6440,10 @@ exports.push([module.i, ".card {\r\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Compra.css":
-/*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/Compra.css ***!
-  \****************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/PurchaseCard.css":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/PurchaseCard.css ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6452,7 +6452,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".ComprarCard {\r\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\r\n    background-color: #eef;\r\n    transition: 0.3s;\r\n    border-radius: 5px;\r\n    width: 300px;\r\n    max-width: 300px;\r\n    padding-bottom: 30px;\r\n    padding-top: 20px;\r\n    margin: 20px 20px;\r\n    max-height: 500px;\r\n  }\r\n\r\n  .ComprarCard div {\r\n    text-align: center;\r\n    align-content: center;\r\n    margin-left: 15px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.confirm {\r\n  justify-content: space-around;\r\n  text-align: center;\r\n  width: 150px;\r\n  margin: 20px 80px;\r\n}\r\n", ""]);
+exports.push([module.i, ".PurchaseCard {\r\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\r\n    background-color: #eef;\r\n    transition: 0.3s;\r\n    border-radius: 5px;\r\n    width: 300px;\r\n    max-width: 300px;\r\n    padding-bottom: 30px;\r\n    padding-top: 20px;\r\n    margin: 20px 20px;\r\n    max-height: 500px;\r\n  }\r\n\r\n  .PurchaseCard div {\r\n    text-align: center;\r\n    align-content: center;\r\n    margin-left: 15px;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.confirm {\r\n  justify-content: space-around;\r\n  text-align: center;\r\n  width: 150px;\r\n  margin: 20px 80px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -70468,105 +70468,22 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./resources/js/ScreenCompra.jsx":
+/***/ "./resources/js/ScreenCoupon.jsx":
 /*!***************************************!*\
-  !*** ./resources/js/ScreenCompra.jsx ***!
+  !*** ./resources/js/ScreenCoupon.jsx ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ScreenCompra; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ScreenCoupon; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Compra__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Compra */ "./resources/js/components/Compra.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Screen_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Screen.css */ "./resources/js/Screen.css");
-/* harmony import */ var _Screen_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Screen_css__WEBPACK_IMPORTED_MODULE_4__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-
-
-
-
-var ScreenCompra = /*#__PURE__*/function (_Component) {
-  _inherits(ScreenCompra, _Component);
-
-  var _super = _createSuper(ScreenCompra);
-
-  function ScreenCompra() {
-    _classCallCheck(this, ScreenCompra);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(ScreenCompra, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        style: {
-          display: "flex",
-          flexWrap: "wrap"
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Compra__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        produto: "Alface",
-        valor: 100
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-        to: "/"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "btn"
-      }, "Gerenciar Promoc\xF5es")));
-    }
-  }]);
-
-  return ScreenCompra;
-}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
-
-
-
-/***/ }),
-
-/***/ "./resources/js/ScreenPromocao.jsx":
-/*!*****************************************!*\
-  !*** ./resources/js/ScreenPromocao.jsx ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ScreenPromocao; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Card */ "./resources/js/components/Card.jsx");
-/* harmony import */ var _components_CardList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/CardList */ "./resources/js/components/CardList.jsx");
+/* harmony import */ var _components_CouponCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/CouponCard */ "./resources/js/components/CouponCard.jsx");
+/* harmony import */ var _components_CouponCardList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/CouponCardList */ "./resources/js/components/CouponCardList.jsx");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Screen_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Screen.css */ "./resources/js/Screen.css");
 /* harmony import */ var _Screen_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Screen_css__WEBPACK_IMPORTED_MODULE_5__);
@@ -70599,18 +70516,18 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var ScreenPromocao = /*#__PURE__*/function (_Component) {
-  _inherits(ScreenPromocao, _Component);
+var ScreenCoupon = /*#__PURE__*/function (_Component) {
+  _inherits(ScreenCoupon, _Component);
 
-  var _super = _createSuper(ScreenPromocao);
+  var _super = _createSuper(ScreenCoupon);
 
-  function ScreenPromocao() {
-    _classCallCheck(this, ScreenPromocao);
+  function ScreenCoupon() {
+    _classCallCheck(this, ScreenCoupon);
 
     return _super.apply(this, arguments);
   }
 
-  _createClass(ScreenPromocao, [{
+  _createClass(ScreenCoupon, [{
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -70618,17 +70535,100 @@ var ScreenPromocao = /*#__PURE__*/function (_Component) {
           display: "flex",
           flexWrap: "wrap"
         }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CouponCard__WEBPACK_IMPORTED_MODULE_2__["default"], {
         cadastrar: 1
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Link"], {
         to: "/comprar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "btn"
-      }, "Fazer Compra")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CardList__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, "Fazer Compra")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_CouponCardList__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
-  return ScreenPromocao;
+  return ScreenCoupon;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/ScreenPurchase.jsx":
+/*!*****************************************!*\
+  !*** ./resources/js/ScreenPurchase.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ScreenPurchase; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_PurchaseCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/PurchaseCard */ "./resources/js/components/PurchaseCard.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Screen_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Screen.css */ "./resources/js/Screen.css");
+/* harmony import */ var _Screen_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Screen_css__WEBPACK_IMPORTED_MODULE_4__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+
+
+
+
+var ScreenPurchase = /*#__PURE__*/function (_Component) {
+  _inherits(ScreenPurchase, _Component);
+
+  var _super = _createSuper(ScreenPurchase);
+
+  function ScreenPurchase() {
+    _classCallCheck(this, ScreenPurchase);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(ScreenPurchase, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        style: {
+          display: "flex",
+          flexWrap: "wrap"
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PurchaseCard__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        produto: "Alface",
+        valor: 120
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+        to: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "btn"
+      }, "Gerenciar Promoc\xF5es")));
+    }
+  }]);
+
+  return ScreenPurchase;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
@@ -70649,8 +70649,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _ScreenPromocao__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ScreenPromocao */ "./resources/js/ScreenPromocao.jsx");
-/* harmony import */ var _ScreenCompra__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ScreenCompra */ "./resources/js/ScreenCompra.jsx");
+/* harmony import */ var _ScreenCoupon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ScreenCoupon */ "./resources/js/ScreenCoupon.jsx");
+/* harmony import */ var _ScreenPurchase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ScreenPurchase */ "./resources/js/ScreenPurchase.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -70711,10 +70711,10 @@ var App = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
         path: "/",
-        component: _ScreenPromocao__WEBPACK_IMPORTED_MODULE_3__["default"]
+        component: _ScreenCoupon__WEBPACK_IMPORTED_MODULE_3__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         path: "/comprar",
-        component: _ScreenCompra__WEBPACK_IMPORTED_MODULE_4__["default"]
+        component: _ScreenPurchase__WEBPACK_IMPORTED_MODULE_4__["default"]
       })));
     }
   }]);
@@ -70801,16 +70801,16 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/Card.jsx":
-/*!******************************************!*\
-  !*** ./resources/js/components/Card.jsx ***!
-  \******************************************/
+/***/ "./resources/js/components/CouponCard.jsx":
+/*!************************************************!*\
+  !*** ./resources/js/components/CouponCard.jsx ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Card; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CouponCard; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -70846,15 +70846,15 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var Card = /*#__PURE__*/function (_Component) {
-  _inherits(Card, _Component);
+var CouponCard = /*#__PURE__*/function (_Component) {
+  _inherits(CouponCard, _Component);
 
-  var _super = _createSuper(Card);
+  var _super = _createSuper(CouponCard);
 
-  function Card(props) {
+  function CouponCard(props) {
     var _this;
 
-    _classCallCheck(this, Card);
+    _classCallCheck(this, CouponCard);
 
     _this = _super.call(this, props);
     _this.state = {
@@ -70869,7 +70869,7 @@ var Card = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass(Card, [{
+  _createClass(CouponCard, [{
     key: "register",
     value: function register() {
       var _this2 = this;
@@ -70966,28 +70966,28 @@ var Card = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return Card;
+  return CouponCard;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
 
 /***/ }),
 
-/***/ "./resources/js/components/CardList.jsx":
-/*!**********************************************!*\
-  !*** ./resources/js/components/CardList.jsx ***!
-  \**********************************************/
+/***/ "./resources/js/components/CouponCardList.jsx":
+/*!****************************************************!*\
+  !*** ./resources/js/components/CouponCardList.jsx ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CardList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CouponCardList; });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card */ "./resources/js/components/Card.jsx");
+/* harmony import */ var _CouponCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CouponCard */ "./resources/js/components/CouponCard.jsx");
 /* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Card.css */ "./resources/js/components/Card.css");
 /* harmony import */ var _Card_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Card_css__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -71017,15 +71017,15 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var CardList = /*#__PURE__*/function (_Component) {
-  _inherits(CardList, _Component);
+var CouponCardList = /*#__PURE__*/function (_Component) {
+  _inherits(CouponCardList, _Component);
 
-  var _super = _createSuper(CardList);
+  var _super = _createSuper(CouponCardList);
 
-  function CardList() {
+  function CouponCardList() {
     var _this;
 
-    _classCallCheck(this, CardList);
+    _classCallCheck(this, CouponCardList);
 
     _this = _super.call(this);
     _this.state = {
@@ -71034,7 +71034,7 @@ var CardList = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass(CardList, [{
+  _createClass(CouponCardList, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
@@ -71060,10 +71060,14 @@ var CardList = /*#__PURE__*/function (_Component) {
       var _this3 = this;
 
       var cupoms = this.state.cupoms;
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, "Todas as Promo\xE7\xF5es"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+        style: {
+          textAlign: "center"
+        }
+      }, "Todas as Promo\xE7\xF5es"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list"
       }, cupoms.map(function (cupom) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CouponCard__WEBPACK_IMPORTED_MODULE_2__["default"], {
           key: cupom.id,
           codigo: cupom.codigo,
           desconto: cupom.desconto,
@@ -71080,22 +71084,22 @@ var CardList = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return CardList;
+  return CouponCardList;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 
 
 /***/ }),
 
-/***/ "./resources/js/components/Compra.css":
-/*!********************************************!*\
-  !*** ./resources/js/components/Compra.css ***!
-  \********************************************/
+/***/ "./resources/js/components/PurchaseCard.css":
+/*!**************************************************!*\
+  !*** ./resources/js/components/PurchaseCard.css ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./Compra.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Compra.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./PurchaseCard.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/PurchaseCard.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -71117,22 +71121,22 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./resources/js/components/Compra.jsx":
-/*!********************************************!*\
-  !*** ./resources/js/components/Compra.jsx ***!
-  \********************************************/
+/***/ "./resources/js/components/PurchaseCard.jsx":
+/*!**************************************************!*\
+  !*** ./resources/js/components/PurchaseCard.jsx ***!
+  \**************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Compra; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PurchaseCard; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Compra_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Compra.css */ "./resources/js/components/Compra.css");
-/* harmony import */ var _Compra_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Compra_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _PurchaseCard_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PurchaseCard.css */ "./resources/js/components/PurchaseCard.css");
+/* harmony import */ var _PurchaseCard_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_PurchaseCard_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -71162,15 +71166,15 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-var Compra = /*#__PURE__*/function (_Component) {
-  _inherits(Compra, _Component);
+var PurchaseCard = /*#__PURE__*/function (_Component) {
+  _inherits(PurchaseCard, _Component);
 
-  var _super = _createSuper(Compra);
+  var _super = _createSuper(PurchaseCard);
 
-  function Compra(props) {
+  function PurchaseCard(props) {
     var _this;
 
-    _classCallCheck(this, Compra);
+    _classCallCheck(this, PurchaseCard);
 
     _this = _super.call(this, props);
     _this.state = {
@@ -71184,7 +71188,7 @@ var Compra = /*#__PURE__*/function (_Component) {
     return _this;
   }
 
-  _createClass(Compra, [{
+  _createClass(PurchaseCard, [{
     key: "formatDate",
     value: function formatDate(date) {
       var d = new Date(date),
@@ -71261,11 +71265,11 @@ var Compra = /*#__PURE__*/function (_Component) {
       var _this4 = this;
 
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "ComprarCard"
+        className: "PurchaseCard"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Fazer Compra"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Produto : ", this.state.produto, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Valor   : R$", this.state.valor), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Desconto: ", this.state.desconto, "%"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Valor Final: R$", this.state.valor - this.state.valor * this.state.desconto / 100), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "cupom"
+        htmlFor: "coupon"
       }, "Cupom de Desconto"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        id: "cupom",
+        id: "coupon",
         type: "text",
         value: this.state.promocao,
         onChange: function onChange(e) {
@@ -71286,7 +71290,7 @@ var Compra = /*#__PURE__*/function (_Component) {
     }
   }]);
 
-  return Compra;
+  return PurchaseCard;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 

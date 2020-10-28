@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { Component } from 'react'
-import Card from './Card'
+import CouponCard from './CouponCard'
 import './Card.css'
 
-export default class CardList extends Component {
+export default class CouponCardList extends Component {
       constructor () {
         super()
         this.state = {
@@ -32,10 +32,10 @@ export default class CardList extends Component {
         const { cupoms } = this.state
         return (
           <div>
-            <h3>Todas as Promoções</h3>
+            <h3 style={{textAlign: "center"}}>Todas as Promoções</h3>
             <div className='list'>
               {cupoms.map(cupom => (
-                        <Card
+                        <CouponCard
                             key={cupom.id}
                             codigo={cupom.codigo}
                             desconto={cupom.desconto}
@@ -43,7 +43,7 @@ export default class CardList extends Component {
                             inicio={cupom.inicio}
                             fim={cupom.fim}
                             cadastrar={0}
-                        ><button onClick={() => this.remove(cupom.id)} >Remover</button>  </Card>
+                        ><button onClick={() => this.remove(cupom.id)} >Remover</button>  </CouponCard>
                         
               ))}
                     

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
-import Compra from './components/Compra';
+import PurchaseCard from './components/PurchaseCard';
 import { Link } from "react-router-dom";
 import './Screen.css'
 
-export default class ScreenCompra extends Component {
+export default class ScreenPurchase extends Component {
     render() {
         return (
                 <div style={{ display: "flex", flexWrap: "wrap" }}>
-                    <Compra produto="Alface" valor={100} />
+                    <PurchaseCard produto="Alface" valor={120} />
                     <Link to="/"><div className="btn">Gerenciar Promocões</div></Link>
                 </div>  
         )

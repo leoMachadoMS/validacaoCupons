@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
-import './Compra.css'
+import './PurchaseCard.css'
 import axios from 'axios';
 
 
-export default class Compra extends Component {
+export default class PurchaseCard extends Component {
 
     constructor(props){
         super(props)
@@ -100,7 +100,7 @@ export default class Compra extends Component {
     render() {
        
             return (
-                <div className="ComprarCard">
+                <div className="PurchaseCard">
                     <div>
                         <h1>Fazer Compra</h1>
                         <h3>Produto : {this.state.produto} </h3>
@@ -109,8 +109,8 @@ export default class Compra extends Component {
                         <br/>
                         <h3>Valor Final: R${this.state.valor - (this.state.valor * this.state.desconto)/100}</h3>
                     
-                        <label htmlFor="cupom" >Cupom de Desconto</label>
-                        <input id="cupom" type="text" value={this.state.promocao} onChange={e => this.setState({ promocao: e.target.value })} />
+                        <label htmlFor="coupon" >Cupom de Desconto</label>
+                        <input id="coupon" type="text" value={this.state.promocao} onChange={e => this.setState({ promocao: e.target.value })} />
                         <button onClick={() => this.validate()} >Validar</button>
                         <br/>
                         <label>{this.state.not}</label>

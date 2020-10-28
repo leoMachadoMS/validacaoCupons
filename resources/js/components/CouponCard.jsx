@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import axios from 'axios';
 import './Card.css'
 
-export default class Card extends Component {
+export default class CouponCard extends Component {
 
     constructor(props){
         super(props)
